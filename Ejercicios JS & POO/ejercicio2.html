@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2 - Ordenamiento</title>
+</head>
+<body>
+<script>
+    let inicio =["unacadena",1000,false,3,9,500,1,10,500,1,10,true];
+    let arrayNumbers = [];
+    let firstNumber, secondNumber;
+
+    // Eliminando valores que no sean numéricos
+    for (let i = 0; i < inicio.length; i++) {
+       if(typeof inicio[i] === 'number'){
+          arrayNumbers.push(inicio[i]);
+       }
+    }
+
+    //Ordenamiento
+    for (let j = 2; j < arrayNumbers.length; j++) {
+       for (let k = 0; k < arrayNumbers.length; k++) {
+
+          if(arrayNumbers[k] > arrayNumbers[k+1]){
+             firstNumber = arrayNumbers[k];
+             secondNumber = arrayNumbers[k+1];
+
+             arrayNumbers[k] = secondNumber;
+             arrayNumbers[k+1] = firstNumber;
+          }
+       }
+    }
+
+    console.log(arrayNumbers);
+</script>
+</body>
+</html>
