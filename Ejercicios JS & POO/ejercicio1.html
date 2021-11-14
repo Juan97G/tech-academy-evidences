@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numeroDeElementos = 4;
+    let firstNumber = 0;
+    let secondNumber = 1;
+    let serie = "0, 1, ";
+
+    for (let i = 2; i < numeroDeElementos; i++) {
+        const suma = firstNumber + secondNumber;
+
+        serie += `${suma}, `;
+
+        firstNumber = secondNumber;
+        secondNumber = suma;
+    }
+
+    serie = serie.substring(0, serie.length - 2); //Eliminando la ultima coma ","
+    console.log(serie);
+</script>
+</body>
+</html>
