@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hind', sans-serif;
+    color: #272c30;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.btn-all-page {
+    background: linear-gradient(0deg,#007fff 0%,#00b1ff 100%);
+    padding: 18px 43px;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.btn-all-page:hover {
+    color: #1489ff;
+    border: 1px solid #1489ff;
+    background: #FFF;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.section-one {
+    background: url("./img/Grupo 9213@3x.webp") no-repeat center;
+    background-size: contain;
+    height: 800px;
+}
+
+.section-one__info {
+    padding-top: 42px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-one__info p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-top: 3px;
+}
+
+.section-one__info p > a {
+    text-decoration-line: none;
+    font-weight: 600;
+    color: #1489ff;
+}
+
+.section-one__card {
+    border: 1px solid #c3d5e0;
+    border-radius: 10px;
+    margin: 50px auto 0 auto;
+    width: 690px;
+    height: 265px;
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    background-color: #FFF;
+    cursor: pointer;
+    box-shadow: 0 15px 15px 0 rgba(26,72,100,.15);
+}
+.section-one__card-image {
+    align-self: center;
+}
+
+.section-one__card-image img {
+    width: 100%;
+}
+
+.section-one__card-info {
+    margin: 35px 25px 35px 3px;
+    position: relative;
+}
+
+.section-one__card-info p {
+    font-weight: 300;
+    margin-top: 7px;
+    line-height: 1.3;
+}
+
+.section-one__card-info-name h3 {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.section-one__card-info-name h6{
+    font-size: 18px;
+    font-weight: 500;
+    color: #1489ff;
+    margin-top: -10px;
+}
+
+.section-one__card-info-stars {
+    position: absolute;
+    top: 35px;
+    right: 3px;
+}
+
+.section-one__card-info-stars img {
+    width: 21px;
+    margin-right: 5px;
+}
+
+.section-one__card-info-stars img:last-of-type {
+    margin-right: 0;
+}
+
+/* END SECTION ONE  */
+
+.section-two {
+
+}
+
+.section-two__container {
+    padding: 50px 120px;
+}
+
+.section-two__container h2 {
+    text-align: center;
+    font-size: 42px;
+    line-height: 1.1;
+}
+
+.section-two__container button {
+    display: block;
+    margin: 40px auto 0 auto;
+}
+
+.section-two__container-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 35px;
+    margin-top: 35px;
+}
+
+.section-two__container-products-card {
+    border-radius: 12px;
+    text-align: center;
+    background-color: #FFF;
+    padding: 8px 25px 25px 25px;
+    box-shadow: 0 10px 30px 0 rgba(195,213,224,0.5);
+}
+
+.section-two__container-products-card img {
+    width: 100%;
+}
+
+.section-two__container-products-card h4 {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.section-two__container-products-card p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* END SECTION TWO */
+
+.section-three {
+    margin-top: 55px;
+}
+
+.section-three > h2 {
+    font-size: 42px;
+    text-align: center;
+}
+
+.section-three > button {
+    display: block;
+    margin: 28px auto 0 auto;
+}
+
+.section-three__process {
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 95px;
+}
+
+.section-three__process-line {
+    width: 80%;
+    height: 1.4%;
+    background: linear-gradient(to right, #0a93f7, #17e5ed);
+    position: absolute;
+    margin: auto;
+    top: 45%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.section-three__process-only {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    padding-top: 15px;
+}
+
+.section-three__process-only-image {
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+}
+
+.circle {
+    border: 1px solid #1489ff;
+    background-color: #FFF !important;
+    width: 50%;
+    height: 55%;
+    border-radius: 50%;
+    margin: 25px auto 0 auto;
+}
+
+.circle:hover {
+    background-color: #1489ff !important;
+}
+
+.circle-img-1 {
+    background: url("./img/user@3x.webp") no-repeat center center;
+    background-size: 50%;
+}
+
+.circle-img-1:hover {
+    background: url("./img/user_3x-white.webp") no-repeat center center;
+    background-size: 50%;
+}
+
+.circle-img-2 {
+    background: url("./img/list_3x.webp") no-repeat center center;
+    background-size: 50%;
+}
+
+.circle-img-2:hover {
+    background: url("./img/list_3x-white.webp") no-repeat center center;
+    background-size: 50%;
+}
+
+.circle-img-3 {
+    background: url("./img/gift_3x.webp") no-repeat center center;
+    background-size: 50%;
+}
+
+.circle-img-3:hover {
+    background: url("./img/gift_3x-white.webp") no-repeat center center;
+    background-size: 50%;
+}
+
+.section-three__process-only img {
+    width: 18%;
+}
+
+.section-three__process-only p {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+/* END SECTION THREE */
+
+.section-four {
+    background: url("./img/Enmascarar grupo 259@3x.webp") no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    margin-top: 110px;
+    padding-top: 160px;
+}
+
+.section-four h2 {
+    font-size: 42px;
+    text-align: center;
+    line-height: 1.1;
+
+}
+
+.section-four button {
+    display: block;
+    margin: 75px auto 0 auto;
+}
+
+.section-four__platform {
+    width: 68%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 50px auto 0 auto;
+}
+
+.section-four__platform-card {
+    border: 1px solid #c3d5e0;
+    border-radius: 10px;
+    text-align: center;
+    padding: 23px 0;
+    background-color: #FFF;
+    box-shadow: 0 20px 15px 0 rgba(26, 72, 100, 0.1);
+    cursor: pointer;
+}
+
+.section-four__platform-card:hover {
+    border: 1px solid #1489ff;
+}
+
+.section-four__platform-card p {
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+/* END SECTION FOUR */
+
+.footer {
+    background: linear-gradient(90deg,#1489ff 0%,#0073e6 100%);
+    margin-top: 135px;
+}
+
+.footer__first {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5px 20px 5px;
+    border-bottom: 1px solid #FFF;
+}
+
+.footer__first-social {
+    margin-top: 19px;
+}
+
+.footer__first-social img {
+    margin-right: 20px;
+}
+
+.footer__first-social img:last-of-type {
+    margin-right: 0;
+}
+
+.footer__second {
+    width: 80%;
+    margin: 0 auto;
+    padding: 32px 0 53px 0;
+    text-align: right;
+}
+
+.footer__second ul {
+    list-style: none;
+}
+
+.footer__second ul li {
+    display: inline;
+}
+
+.footer__second ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 50px;
+}
