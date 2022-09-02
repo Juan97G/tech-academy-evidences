@@ -1,0 +1,12 @@
+label {
+   font-size: large;
+   font-weight: bold;
+}
+
+.details-auto {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 60%;
+   margin-left: 50px;
+}

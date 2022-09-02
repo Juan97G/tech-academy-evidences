@@ -1,0 +1,54 @@
+<div class="card">
+   <div class="card-header fs-4 text-center">
+      {{tituloPagina + ": " + infoAuto?.marca + " " + infoAuto?.modelo}}
+   </div>
+   <div class="card-body">
+      <div class="container-fluid">
+         <div class="row text-center">
+            <div class="col-6 container">
+               <div class="details-auto">
+                  <label>Marca: </label>
+                  <span>{{infoAuto?.marca}}</span>
+               </div>
+               <div class="details-auto">
+                  <label>Modelo: </label>
+                  <span>{{infoAuto?.modelo}}</span>
+               </div>
+               <div class="details-auto">
+                  <label>Año: </label>
+                  <span>{{infoAuto?.anio}}</span>
+               </div>
+               <div class="details-auto">
+                  <label>Color: </label>
+                  <span>{{infoAuto?.color}}</span>
+               </div>
+               <div class="details-auto">
+                  <label>Kilómetros: </label>
+                  <span>{{infoAuto?.kms | number}}</span>
+               </div>
+               <div class="details-auto">
+                  <label>Precio: </label>
+                  <span>{{infoAuto?.precio | currency}}</span>
+               </div>
+               <div class="details-auto">
+                  <label>Calificación: </label>
+                  <app-estrellas [calificacion]="infoAuto.calificacion"></app-estrellas>
+               </div>
+            </div>
+            <div class="col-6 container">
+               <img [src]="infoAuto?.urlImage" alt="" height="220">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-3">
+               <button class="btn btn btn-danger float-end">COMPRAR</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="card-footer">
+      <button class="btn btn-success" (click)="onBack()">
+         Regresar
+      </button>
+   </div>
+</div>

@@ -1,0 +1,71 @@
+<div class="card">
+   <div class="card-header">
+      <h1>{{tituloListaAutos}}</h1>
+   </div>
+   <div class="card-body">
+      <div class="row">
+         <div class="col-md-12 text-center">
+            <label id="lblFiltro" for="txtFiltro" class="fw-bold">Filtrar por: </label>
+            <input type="text" id="txtFiltro" class="w-50" [(ngModel)]="filtro" />
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-6 mt-2">
+            <h4>Filtros: </h4>
+         </div>
+      </div>
+   </div>
+   <div class="table-responsive" *ngIf="arregloAutos.length > 0">
+      <table class="table table-striped text-center">
+         <thead class="table-dark">
+            <tr>
+               <th>
+                  <button
+                     class="btn btn-success"
+                     (click)="toggleViewImage()"
+                  >
+                     {{muestraImagen ? "Ocultar " : "Ver "}} Imágenes
+                  </button>
+               </th>
+               <th>Marca</th>
+               <th>Modelo</th>
+               <th>Año</th>
+               <th>Color</th>
+               <th>Kilómetros</th>
+               <th>Precio</th>
+               <th>Calificación</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let auto of arregloAutosFilter">
+               <td>
+                  <img
+                     [src]="auto.urlImage"
+                     alt=""
+                     [style.width.px]="imageWidth"
+                     [style.margin.px]="imageMargin"
+                     *ngIf="muestraImagen"
+                  />
+               </td>
+               <td>{{auto.marca}}</td>
+               <td>
+                  <a [routerLink]="['/autos', auto.id]" class="text-decoration-none">
+                     {{auto.modelo}}
+                  </a>
+               </td>
+               <td>{{auto.anio}}</td>
+               <td>{{auto.color}}</td>
+               <td>{{auto.kms | number}}</td>
+               <td>{{auto.precio | currency}}</td>
+               <td class="text-start">
+                  <app-estrellas
+                     [calificacion]="auto.calificacion"
+                  ></app-estrellas>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <form action=""></form>
+</div>
+
